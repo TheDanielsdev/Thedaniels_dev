@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thedanielsdev</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="LogoMakr-8X5LYk.png" rel="icon">
+    <!--<link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Main Stylesheet File -->
+
+    <link rel="stylesheet" href="css/landing.css">
+
+
+</head>
+
+<body id="page-top" class="dark-theme">
+
+    <ul class="socials">
+        <li><a href="#"><span class="ico-circle facebook"><i class="ion-social-facebook"></i></span></a></li>
+
+        <li><a href="#"><span class="ico-circle insta"><i class="ion-social-instagram"></i></span></a></li>
+
+        <li><a href="https://twitter.com/TheDanielsdev" target="_blank"><span class="ico-circle twitter"><i class="ion-social-twitter"></i></span></a></li>
+        <!--<li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>-->
+    </ul>
+
+
+
+    <div class="container">
+        <h2>TheDaniels<br><span>...infinite ideas</span></h2>
+    </div>
+
+
+
+
+
+    <button type="button" class="btn"><a href="home.html">Go To HomePage</a></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="preloader"></div>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+    <script src="validate.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="js/mine.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="piechart.js"></script>
+    <script src="anime.min.js"></script>
+
+
+    <script>
+        const container = document.querySelector('.container');
+        for (var i = 0; i <= 100; i++) {
+            const blocks = document.createElement('div');
+            blocks.classList.add('block');
+            container.appendChild(blocks);
+        }
+
+        function animateBlocks() {
+            anime({
+                targets: '.block',
+                translateX: function() {
+                    return anime.random(-1000, 1000)
+                },
+                translateY: function() {
+                    return anime.random(-1000, 1000)
+                },
+                scale: function() {
+                    return anime.random(0, 2)
+                },
+
+                easing: 'linear',
+                duration: 3000,
+                delay: anime.stagger(0),
+                complete: animateBlocks,
+            })
+        }
+        animateBlocks()
+    </script>
+
+
+
+</body>
+
+</html>
